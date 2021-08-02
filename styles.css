@@ -15,12 +15,12 @@ body {
 
 #login-box {
   position: relative;
-  width: 600px;
+  width: 1100px;
   height: 400px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  
+  height: 100vh;
 }
 
 .left {
@@ -29,8 +29,8 @@ body {
   left: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
-  height: 400px;
+  width: 550px;
+  height: 656px;
   background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/signIn.png') no-repeat top center;
   background-size: cover;
   background-position: center;
@@ -38,8 +38,8 @@ body {
 
 .right {
   position: absolute;
-  top: 70px;
-  right: 0;
+  top: 200px;
+  right: 210px;
   box-sizing: border-box;
   padding: 40px;
   width: 300px;
@@ -82,8 +82,8 @@ input[type="password"]:focus {
 
 input[type="submit"] {
   margin-top: 28px;
-  width: 100px;
-  height: 26px;
+  width: 140px;
+  height: 40px;
   background: #0291e4;
   border: none;
   border-radius: 2px;
@@ -109,8 +109,8 @@ input[type="submit"]:active {
 
 .or {
   position: absolute;
-  top: 180px;
-  left: 280px;
+  top: 300px;
+  left: 532px;
   width: 40px;
   height: 40px;
   background: rgb(255, 255, 255);
@@ -124,16 +124,16 @@ input[type="submit"]:active {
 
 h8 {
     position: absolute;
-    top: 20px;
-    left: 80px;
+    top: 48px;
+    left: 170px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     color: #FFF;
 }
 h1 {
   position: absolute;
-  top: 40px;
-  left: 60px;
+  top: 78px;
+  left: 130px;
   font-size: 2px;
   color: #FFF;
 }
@@ -142,20 +142,20 @@ h1 {
 
 
 .socialText{
-    font-size: 10px;
+    font-size: 13px;
     color: #FFF;
 }
 
 .socialText.socialParagph{
   position: absolute;
-  top: 90px;
-  left: 60px;
+  top: 140px;
+  left: 130px;
   
 }
 .socialText.continueText{
   position: absolute;
-  top: 180px;
-  left: 60px;
+  top: 280px;
+  left: 130px;
 }
 
 
@@ -163,8 +163,8 @@ h1 {
 
 .socialLogins{
   position: absolute;
-  top: 200px;
-  left: 60px;
+  top: 320px;
+  left: 130px;
 }
 img.social{
     width: 12px;
@@ -172,9 +172,9 @@ img.social{
 }
 
 button.social-signin {
-  margin-bottom: 10px;
-  width: 180px;
-  height: 26px;
+  margin-bottom: 20px;
+  width: 288px;
+  height: 40px;
   border: none;
   border-radius: 2px;
   color: #FFF;
@@ -233,16 +233,24 @@ button.social-signin.google {
   }
 
   img.back{
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 22px;
-    left: 60px;
+    top: 44px;
+    left: 130px;
   }
   .flexcon {
     display:inline;
     overflow: hidden;
     white-space: nowrap;
+    
  }
  
   
+ @media screen and (min-width: 60px) {
+  .login-box {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+}
