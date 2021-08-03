@@ -1,0 +1,230 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%; 
+}
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    border-style: none!important;
+}
+
+.card2 {
+    width: 50%;
+    padding: 40px 30px 10px 30px;
+    
+}
+
+.card1 {
+    width: 50%;
+    background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/signIn.png') no-repeat top center;
+}
+
+#logo {
+    width: 70px;
+    height: 60px
+}
+
+.heading {
+    margin-bottom: 60px !important
+}
+
+::placeholder {
+    color: #000 !important;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #000 !important
+}
+
+::-ms-input-placeholder {
+    color: #000 !important
+}
+
+
+
+.msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px
+}
+
+
+
+a {
+    color: #000
+}
+
+a:hover {
+    color: #000
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 50px !important
+}
+
+.sm-text {
+    font-size: 15px
+}
+#s1{
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 992px) {
+     
+    .card1 { 
+        width: 100%;
+        padding: 40px 30px 10px 30px;
+        background:rgb(255, 255, 255)
+    }
+    #signIn{
+        visibility: hidden;
+    }
+    #t1{
+        visibility: hidden;
+    }
+    #t2{
+        visibility: hidden;
+
+    }
+    #s1{
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        justify-content: center;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        top:5px;
+        text-align: center;
+    }
+    #or{
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        justify-content: center;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        top:50opx;
+        text-align: center;
+    }
+    #signInbtn{
+        width:100%;
+    }
+    #signUp{
+        visibility: hidden;
+    }
+   #socialbtn{
+    width:100%;
+   }
+    #formElements{
+        position: absolute;
+        top: 60px;
+    }
+   
+    .card0 {
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px !important
+    }
+   
+    .card2 {
+        padding: 50px
+    }
+
+    .right {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important
+    }
+}
+
+h8 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFF;
+}
+
+ .h1{
+    color: #FFF;
+    font-size: 15px;
+}
+
+.social-btn .btn {
+    margin: 10px 0;
+    font-size: 17px;
+    text-align: center; 
+    line-height: 24px;      
+}
+.social-btn .btn i {
+    float: center;
+    margin: 4px 15px  0 5px;
+    min-width: 15px;  
+}
+
+
+html {
+    font-size: 1rem;
+  }
+  
+ input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.topElements{
+    position: absolute;
+    left: 18%;
+    top: 10%
+}
+
+.text-success{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.control-label{
+    color: rgb(170, 170, 170);
+    font-weight: 200;
+}
+
+
