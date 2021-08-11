@@ -115,110 +115,13 @@ footer {
 
 
 /********************************************SingIN & SINGUP*********************************************************/
-body {
-  margin: 0;
-  padding: 0;
-  background: #DDD;
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #000;
-  overflow-x: hidden;
-  height: 100%; 
+@media (min-width: 768px) {
+  .h-md-100 { height: 100vh; }
 }
 
-.full-width-div {
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-button:focus {
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  outline-width: 0
-}
-
-.card {
-  border-radius: 0;
-  border: none;
-  border-style: none!important;
-}
-
-.card2 {
-  width: 50%;
-  padding: 40px 30px 10px 30px;
-  
-}
-
-.card1 {
-  width: 50%;
-  background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/signIn.png') no-repeat top center;
-}
-
-#logo {
-  width: 70px;
-  height: 60px
-}
-
-.heading {
-  margin-bottom: 60px !important
-}
-
-
-a {
-  color: #000
-}
-
-a:hover {
-  color: #000
-}
-
-.bottom {
-  width: 100%;
-  margin-top: 50px !important
-}
-
-.sm-text {
-  font-size: 15px
-}
-#s1{
-  color: rgb(255, 255, 255);
- 
-}
-
-#continueWithSocialText{
-  color: rgb(255, 255, 255);
-  
-}
-h8 {
-  font-weight: 400;
-  font-size: 15px;
-  color: #FFF;
-}
-
-.h1{
-  color: #FFF;
-  font-size: 15px;
-}
-
-.social-btn .btn {
-  margin: 10px 0;
-  font-size: 17px;
-  text-align: center; 
-  line-height: 24px;      
-}
-.social-btn .btn i {
-  float: center;
-  margin: 4px 15px  0 5px;
-  min-width: 15px;  
-}
-
-
-html {
-  font-size: 1rem;
-}
+.btn-round { border-radius: 30px; }
+.fisrtHaft { background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/signIn.png') ; }
+.text-cyan { color: #35bdff; }
 
 #formElements input[type="text"],
 select.form-control {
@@ -228,122 +131,201 @@ border-bottom: 1px solid rgb(170, 170, 170);
 -webkit-box-shadow: none;
 box-shadow: none;
 border-radius: 0;
-} 
-
-input[type="text"]:focus,
-select.form-control:focus {
--webkit-box-shadow: none;
-box-shadow: none;
-}
-
-.topElements{
-  position: absolute;
-  left: 18%;
-  top: 10%
-}
-
-.text-success{
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .control-label{
   color: rgb(170, 170, 170);
   font-weight: 200;
 }
+.backBtn {
+  margin-left: 0px;
+  margin-top: -50px;
+}
+.backText{
+  margin-left: 10px;
+  margin-top: -50px;
+}
 
-/*************SignIn/SignUp responsive for tab,phones******************/
-@media screen and (max-width: 992px) { 
-     
-  .card1 { 
-      width: 100%;
-      padding: 40px 30px 10px 30px;
-      background:rgb(255, 255, 255)
-  }
-  #signIn #t1 #t2{
-      visibility: hidden;
-  }
-  
-  
-  #continueWithSocialText{
-      color: rgb(0, 0, 0);
-      text-align: center;
-      font-size: 12px;
-  }
-  #s1{
-      margin: auto;
-      width: 100%;
-      padding: 10px;
-      justify-content: center;
-      position: absolute;
-      color: rgb(255, 255, 255);
-      top:5px;
-      text-align: center;
-      object-fit: cover;
-      font-family: Chalkduster;
-      background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/mobileSign.jpg') no-repeat center ;
-  }
-  #or{
-      margin: auto;
-      width: 90%;
-      padding: 10px;
-      justify-content: center;
-      position: absolute;
-      color: rgb(0, 0, 0);
-      top:50opx;
-      text-align: center;
-      font-size: 20px;
-  }
+.or {
+  position: absolute;
+  top: 50%;
+  left: 48.5%;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
 
-  
+/********************************************Service Profile*********************************************************/
 
-  #signInbtn{
-      width:100%;
-      border-radius:1rem;
-  }
-  #signUp{
-      visibility: hidden;
-  }
+.btn-group{
+  width: 80%;
+  margin-top: -5%;
+  margin-left: 10%;
+}
 
-   #socialbtn{
+
+.about{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.card {
+    min-height: 200px;
+    
+}
+
+
+
+.btn-info-outline{
+   border-color: white;
+   border-radius: 2px;
+}
+
+.card-img{
+  height: 100%;
+  background: linear-gradient(to right,#4d0000, #4d0000) ;
+}
+
+.col-sm-7 .row{
+  margin-left: 1%;
+}
+
+#ourService{
+  margin-left: 43%;
+}
+
+#businessHourse{
+  margin-left: -10%;
+  margin-top: 1%;
+  height: 0%;
+}
+
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+
+
+
+
+
+
+.shadow-effect{
+    background:#fff;
+    padding:20px;
+    border-radius: 4px;
+    text-align: center;
+    border:1px solid #ececec;
+    box-shadow: 0 19px 38px rgba(255,255,255,0.08), 0 15px 12px rgba(255,255,255,0.08);
+} 
+#customers-testimonials .shadow-effect p{
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+#customers-testimonials .item{
+    padding:50px;
+    margin-bottom: 20px;
+    opacity: 0.2;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.owl-carousel .owl-item img{
+    width:50%;
+    height:50%;
+    margin: 0 auto 17px;
+    border-radius: 6px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span{
+    background-color:#3190e7;
+    transform:translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+    display: inline-block;
     width:100%;
- 
-  }
+    text-align:center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+    display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span{
+    background: #3190e7;
+    display: inline-block;
+    height:20px;
+    margin:0 2px 5px;
+    transform:translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width:20px;
+}
+
   
-  #formElements{
-      position: absolute;
-      top: 60px;
-  }
- 
-  .card0 {
-      display: flex;
-      flex-direction: column-reverse;
-     
-  }
 
-  .card2 {
-      width: 100%;
-  }
 
-  .right {
-      margin-top: 100px !important;
-      margin-bottom: 100px !important
-  }
+
+
+
+
+
+
+.col-md-2{
+  display: inline-block;
+  margin-left:-10px;
+
+}
+.col-md-2 img{
+  width:100%;
+  height:50%;
+  border-radius: 50%;
+}
+  
+body .carousel-control-prev-icon,
+body .carousel-indicators li,
+body .carousel-control-next-icon{
+  background-color:#000;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-      padding: 10px !important
-  }
- 
-  .card2 {
-      padding: 50px
-  }
+span.carousel-control-prev-icon {
+ position: relative;
+ bottom: 40px;
+ right: 40px;
+}
 
-  .right {
-      margin-top: 50px !important;
-      margin-bottom: 50px !important
-  }
+span.carousel-control-next-icon {
+ position: relative;
+ bottom: 40px;
+}
+
+.carousel-item{
+   margin-left: 7%;
 }
 
 
@@ -358,6 +340,79 @@ box-shadow: none;
 
 
 
+.rating-label {
+    font-weight: bold
+}
+
+.rating-bar {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px
+}
+
+.bar-5 {
+    width: 70%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-4 {
+    width: 30%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-3 {
+    width: 20%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-2 {
+    width: 10%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-1 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.star-active:hover {
+    color: #F9A825;
+    cursor: pointer
+}
+
+.star-inactive {
+    color: #CFD8DC;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
 
 
 
