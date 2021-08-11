@@ -31,8 +31,8 @@
     padding: 0 2px;
 
 }
-/************************************************************************HOME PAGE***************************************************/
-/************************************************************************NAV-BAR***************************************************/
+/************************************************************************HOME PAGE***************************************************************/
+/************************************************************************NAV-BAR*****************************************************************/
 
 #nav-bar{
   position: sticky;
@@ -58,8 +58,74 @@
   margin-bottom: 0;
   border-radius: 0;
 }
+/********************************************Search-Page****************************************************************************************/
+*{
+  padding: auto;
+  margin: 0;
+  
+}
+.banner-area{
+  width: 100%;
+  height:100vh;
+  background:url(Images/service.png);
+  background-size: cover;
+  
 
-/******************************************************************FOOTER********************************************************/ 
+}
+.content-area{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+ text-align:left ;
+}
+#h1{
+ font-size: 50px;
+ color: white;
+}
+.content p{
+ font-size: 20px;
+
+ color: white;
+}
+.content .btn_search{
+ color: white;
+ background: #FCA120;
+ outline: none;
+ border-radius: 2px;
+ border: none;
+}
+#location{
+ background-image: url(Images/location.png);
+ position: left;
+ background-repeat: no-repeat;
+ padding-left: 30px;
+ border: none;
+ 
+
+
+}
+#service{
+ background-image: url(Images/search.png);
+ position: left;
+ background-repeat: no-repeat;
+ padding-left: 30px;
+ border: none;
+
+
+}
+
+
+/******************************************************************Home page body********************************************************/ 
+.botemleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/******************************************************************FOOTER**********************************************************************/ 
 footer {
   background-color:#0093F0;
   padding: 25px;
@@ -81,12 +147,13 @@ footer {
   height: 40px;
 }
 .footer-mail{
-  border: 2px solid #0093F0;
+  border: 2px solid white;
   width: 6cm;
   margin:8px 0;
   outline: none;
   box-sizing: border-box;
-  border-color: hsl(0, 0%, 73%);
+  border-color: white;
+  background-color: #0093F0;
   
 
 }
@@ -99,25 +166,29 @@ footer {
 
 
 
-/********************************************Downloard-Page****************************************************/
+/********************************************Downloard-Page***************************************************************************************/
 
 #homenum{
-  padding-right: 50px;
-  border-width: 1px;
-  background-color:#CBCBCB ;
+  padding-right: 1px;
+  
+  background-color:#DDDDDD;
+  border-radius: 2px;
+  border-color: #DDDDDD;
   
 }
 .btn-down{
   border-radius: 5px !important;
   width: 150px; 
+  height: 35px;
  }
 
 
 
-/********************************************SingIN & SINGUP*********************************************************/
+/********************************************SingIN & SINGUP**************************************************************************************/
 @media (min-width: 768px) {
   .h-md-100 { height: 100vh; }
 }
+
 
 .btn-round { border-radius: 30px; }
 .fisrtHaft { background: linear-gradient(to right,#16b2faba, #16b2faba), url('Images/signIn.png') ; }
@@ -338,81 +409,6 @@ span.carousel-control-next-icon {
 
 
 
-
-
-.rating-label {
-    font-weight: bold
-}
-
-.rating-bar {
-    width: 300px;
-    padding: 8px;
-    border-radius: 5px
-}
-
-.bar-container {
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 5px
-}
-
-.bar-5 {
-    width: 70%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-4 {
-    width: 30%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-3 {
-    width: 20%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-2 {
-    width: 10%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-1 {
-    width: 0%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-
-
-.star-active {
-    color: #FBC02D;
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-.star-active:hover {
-    color: #F9A825;
-    cursor: pointer
-}
-
-.star-inactive {
-    color: #CFD8DC;
-    margin-top: 10px;
-    margin-bottom: 10px
-}
 
 
 
